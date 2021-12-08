@@ -1194,7 +1194,7 @@ def downloadsocks(choice):
     if choice == "1":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all",
+            r = requests.get("https://proxydisk.netlify.app/proxy.txt",
                              timeout=5)
             f.write(r.content)
         except:
